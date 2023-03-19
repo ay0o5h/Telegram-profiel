@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    android:background="@color/dark_blue_700"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerHeight"
+        android:background="@color/dark_blue_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageSmall1"
+        android:layout_width="@dimen/imageWidth"
+        android:layout_height="@dimen/imageHeght"
+        android:layout_margin="@dimen/normalMargin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageSmall2"
+        android:layout_width="@dimen/imageWidth"
+        android:layout_height="@dimen/imageHeght"
+        android:layout_margin="@dimen/normalMargin"
+        android:src="@drawable/cover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+    <TextView
+        android:id="@+id/channelName"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/channel_name"
+        android:textSize="@dimen/normalFontSize"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="65dp" />
+    <TextView
+        android:id="@+id/subName"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/sub_num"
+        android:textColor="@color/gray"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="64dp" />
+    <ImageButton
+        android:id="@+id/BackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normalMargin"
+        android:background="@null"
+        android:contentDescription="back"
+        android:src="@drawable/baseline_arrow_back_24"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+    <ImageButton
+        android:id="@+id/moreBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normalMargin"
+        android:background="@null"
+        android:src="@drawable/baseline_more_vert_24"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+    <include
+        android:id="@+id/profileDetails"
+        layout="@layout/profile_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

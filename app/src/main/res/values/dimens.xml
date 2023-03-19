@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normalMargin">16dp</dimen>
+    <dimen name="imageWidth">50dp</dimen>
+    <dimen name="imageHeght">50dp</dimen>
+    <dimen name="headerHeight">120dp</dimen>
+    <dimen name="imageMediaWidth">100dp</dimen>
+    <dimen name="imageMediaHeight">100dp</dimen>
+    <dimen name="normalFontSize">16sp</dimen>
+    <dimen name="smallMargin">8dp</dimen>
+    <dimen name="largeHeight">79dp</dimen>
+    <dimen name="tinyMargin">4dp</dimen>
+    <dimen name="meduimFontSize">14sp</dimen>
+    <dimen name="dividedHeight">1dp</dimen>
+    <dimen name="dividWidth">1dp</dimen>
+    <dimen name="meduimHeight">40dp</dimen>
+</resources>

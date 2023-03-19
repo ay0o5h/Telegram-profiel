@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Telegram_Profile</string>
+    <string name="channel_name">Fact</string>
+    <string name="sub_num">2,885 subscribers</string>
+    <string name="description">Description</string>
+    <string name="everything_here_is_a_fact">everything here is a fact</string>
+    <string name="invite_link">Invite Link</string>
+    <string name="t_me_f0ctt">t.me/f0ctt</string>
+    <string name="notifications">Notifications</string>
+    <string name="off">off</string>
+
+
+</resources>
